@@ -1,0 +1,55 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.header-grid {
+    display: grid;
+}
+
+.logo img {
+    margin-inline: auto;
+}
+
+.phone {
+    border-top: 4px solid orange;
+    text-align: center;
+}
+
+.header-phone {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .logo {
+        grid-row: 1 / 3;
+        align-self: center;
+    
+        & img {
+            min-width: 399px;
+            margin: 0;
+        }
+    }
+
+    .phone {
+        display: grid;
+        justify-content: end;
+        border-top: none;
+        text-align: right;
+    }
+
+    .header-phone {
+        border-top: 4px solid orange;
+        font-size: min(1.675rem, 3vw);
+    }
+}
