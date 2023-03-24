@@ -126,8 +126,8 @@ body {
 }
 .menu-toggle {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
   z-index: 9999;
   background-color: transparent;
   border: 0;
