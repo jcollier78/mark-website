@@ -34,7 +34,7 @@ body {
   6. Improve media defaults
 */
 img, picture, video, canvas, svg {
-  /* display: block; */
+  display: block;
   max-width: 100%;
 }
 
@@ -149,9 +149,6 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
-    max-width: 60%;
-  }
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -263,9 +260,19 @@ body {
   }
 }
 .hero {
-  min-height: 400px;
-  background-image: url("../images/measure.jpg");
+  min-height: 200px;
+  background-image: url("../images/measure-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 40%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 400px;
+    background-image: url("../images/measure.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+  }
 }/*# sourceMappingURL=styles.css.map */
