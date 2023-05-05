@@ -18,21 +18,21 @@
 }
 
 .black-overlay {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(255,255,255,0.7);
 }
 
 .hero-banner-overlay {
-    background-color: rgba(#eb9420,0.5);
+    background-color: rgba(0,0,0,0.6);
     padding-block: 1rem;
 }
 
 .title {
-    color: #ffffff;
+    padding: 1rem;
 }
 
 .title h1 {
     font-size: clamp(1.375rem, 3vw, 1.75rem);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .hero-banner-contact {
@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {

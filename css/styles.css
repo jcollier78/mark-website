@@ -56,7 +56,6 @@ p, h1, h2, h3, h4, h5, h6 {
   --primary-color: #eb9420;
 }
 
-/* General styles */
 html {
   font-family: "Poppins", sans-serif;
 }
@@ -78,6 +77,28 @@ body {
 .container {
   max-width: 1260px;
   margin-inline: auto;
+}
+
+.btn {
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #eea546;
+  transition: background-color 300ms ease;
+}
+
+.btn-secondary {
+  border: 2px solid var(--primary-color);
+  color: #ffffff;
 }
 
 .header {
@@ -276,21 +297,21 @@ body {
 }
 
 .black-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .hero-banner-overlay {
-  background-color: rgba(235, 148, 32, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding-block: 1rem;
 }
 
 .title {
-  color: #ffffff;
+  padding: 1rem;
 }
 
 .title h1 {
   font-size: clamp(1.375rem, 3vw, 1.75rem);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .hero-banner-contact {
@@ -298,6 +319,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {

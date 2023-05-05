@@ -51,7 +51,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* General styles */
 html {
   font-family: 'Poppins', sans-serif;
 }
@@ -59,6 +58,8 @@ html {
 body {
   overflow-x: hidden;
 }
+
+// Utility classes
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -74,4 +75,28 @@ body {
   max-width: 1260px;
   margin-inline: auto;
 }
+
+.btn {
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 2px solid  var(--primary-color);
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #eea546;
+  transition: background-color 300ms ease;
+}
+
+.btn-secondary {
+  border: 2px solid  var(--primary-color);
+  color: #ffffff;
+}
+
 
