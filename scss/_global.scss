@@ -6,9 +6,9 @@
   box-sizing: border-box;
 }
 /*
-  2. Remove default margin
+  2. Remove default margin on body
 */
-* {
+body {
   margin: 0;
 }
 /*
@@ -59,6 +59,14 @@ html {
 
 body {
   overflow-x: hidden;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+article {
+  margin-bottom: 2rem;
 }
 
 // Utility classes

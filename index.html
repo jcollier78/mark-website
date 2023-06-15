@@ -63,43 +63,109 @@
 
         <div class="hero-banner-contact">
             <p>Contact us now</p>
-            <a href="" class="btn btn-primary">Get a free quote</a>
+            <button class="btn btn-primary quote-btn">Get a free quote</button>
             <a href="tel:+61417793334" class="btn btn-secondary">call now</a>
         </div>
 
-        <!-- <section class="hero">
-            <div class="hero-text">
-                <div class="title black-overlay">
-                    <h1>Maintenance services in Perth and surrounding suburbs</h1>
-                    <p>For all your residential and commercial maintenance and repair needs - we do it all!</p>
-                </div>
-            </div>
-            <div class="hero-banner-overlay">
-                <div class="container hero-banner-contact">
-                    <p>Contact us now</p>
-                    <a href="" class="btn btn-primary">Get a free quote</a>
-                    <a href="tel:+61893999619" class="btn btn-secondary">call now</a>
-                </div>
-            </div>
-        </section> -->
-
     </header>
 
-    <main>
+    <!-- <main>
 
-        <section>
-            <div class="container">
-                <h2>Commercial maintenance services</h2>
-            </div>
+        <section class="services">
+
+            <article>
+                <div class="container services-grid">
+                    <div>
+                        <h2>Commercial maintenance services</h2>
+                        Office Renovations and Relocation
+                        Office Subdivisions
+                        Office Expansions and De-fits
+                        <ul>
+                            <li>Partitions</li>
+                            <li>Construction and Renovation</li>
+                            <li>Commercial Fitouts</li>
+                            <li>Retail Fitouts</li>
+                            <li>Furniture and Fittings</li>
+                            <li>Flooring</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="images/office-fit-out.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="container services-grid">
+                    <div>
+                        <img src="images/office-fit-out.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Residential maintenance services</h2>
+                    </div>
+                </div>
+            </article>
+
         </section>
 
-        <section>
-            <div class="container">
-                <h2>Residential maintenance services</h2>
-            </div>
-        </section>
+    </main> -->
 
-    </main>
+    <footer>
+
+        <div class="container footer-grid">
+            <div class="footer-logo">logo</div>
+            <div class="footer-services">
+                <h2>Services</h2>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact us</h2>
+            </div>
+        </div>
+
+    </footer>
+
+    <dialog class="quote-form">
+        <form method="dialog">
+            <div>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="company-name">Company Name</label>
+                <input type="text" id="company-name" name="company-name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <input type="text" id="message" name="message">
+            </div>
+            <button id="quoteSubmit" type="submit">Request a Quote</button>
+            <button id="quoteClose">Cancel</button>
+        </form>
+    </dialog>
+
+    <script>
+
+        const modal = document.querySelector('.quote-form');
+        const openModal = document.querySelector('.quote-btn');
+        const closeModal = document.querySelector('#quoteClose');
+
+        openModal.addEventListener('click', () => {
+            modal.showModal();
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.close();
+        });
+
+    </script>
 
 </body>
 

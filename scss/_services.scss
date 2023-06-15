@@ -1,0 +1,9 @@
+.services h2 {
+    margin-top: 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
