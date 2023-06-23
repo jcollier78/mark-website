@@ -127,7 +127,7 @@ article {
 }
 
 .phone {
-  border-top: 4px solid orange;
+  border-top: 4px solid var(--primary-color);
   text-align: center;
 }
 
@@ -417,7 +417,7 @@ article {
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .quote-form {
