@@ -50,7 +50,8 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
   --primary-color: #f6921e;
   --primary-color-tint: #fdb664;
-  --dark-color: #271905;
+  --clr-accent: #a7a9ac;
+  --dark-color: #404041;
 
   --primary-font: 'Montserrat', sans-serif;;
   --secondary-font: "brandon-grotesque", sans-serif;
@@ -58,6 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: var(--primary-font);
+  color: var(--dark-color);
   overflow-x: hidden;
 }
 
@@ -66,6 +68,7 @@ h1, h2, h3 {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-style: normal;
+  color: var(--dark-color);
   text-transform: uppercase;
   line-height: 1.1;
 }
