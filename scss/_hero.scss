@@ -3,7 +3,7 @@
     background-image: url('../images/measure-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 40%;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -50,14 +50,4 @@
 
 .hero-banner-contact p {
     margin: 0;
-}
-
-@media screen and (min-width: 768px) {
-    .hero {
-        min-height: 400px;
-        background-image: url('../images/measure.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 40%;
-    }
 }

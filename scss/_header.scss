@@ -5,7 +5,6 @@
 
 .header-grid {
     display: grid;
-    margin-bottom: 0.675rem;
 }
 
 .logo img {
@@ -30,6 +29,7 @@
 
     .header-grid {
         grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
     }
 
     .logo {
@@ -38,8 +38,6 @@
     }   
 
     .phone {
-        display: grid;
-        justify-content: end;
         border-top: none;
         text-align: right;
     }

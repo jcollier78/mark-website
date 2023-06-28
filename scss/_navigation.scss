@@ -75,13 +75,14 @@
 
     .primary-nav__list {
         position: absolute;
-        background-color: orange;
+        background-color: var(--primary-color);
         top: 0;
         right: 0;
-        left: 30%;
+        left: 10%;
         padding-block: 4rem;
         border-bottom-left-radius: 2rem;
         box-shadow: 0 1px 4px 4px rgba(0,0,0,0.3);
+        z-index: 1000;
     }
 
     .primary-nav__list[data-state="opened"] {

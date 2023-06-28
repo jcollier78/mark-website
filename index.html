@@ -6,21 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Maintenance Extra provides handyman services in Perth and surrounding suburbs. Our maintenance work is of the highest quality.">
+        content="Maintenance Xtra provides handyman services in Perth and surrounding suburbs. Our maintenance work is of the highest quality.">
     <!-- open graph -->
     <!-- these four are erquired at minimum -->
     <meta property="og:title" content="" />
-    <meta property="og:url" content="https://jasoncollier.com.au" /> <!-- use canonical URLS -->
+    <meta property="og:url" content="https://www.maintenancextra.com.au" /> <!-- use canonical URLS -->
     <meta property="og:description" content="" />
     <meta property="og:image" content="" /> <!-- use images with ratio 1.91:1 and min dimensions of 1200x630 -->
     <!-- not required but useful -->
     <meta property="og:type" content="website" />
     <!-- use 'article' for articles and 'website' for the rest of the pages  -->
+    <link rel="stylesheet" href="https://use.typekit.net/bdt2okb.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/bundle.js" defer></script>
     <title>Maintenance Services Perth | Maintenance Extra</title>
@@ -40,6 +39,24 @@
                 <a href="tel:+61417793334" class="header-phone">Call us now: 0417 793 334</a>
             </div>
 
+            <nav class="primary-nav">
+
+                <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="visually-hidden">Menu</span>
+                    <div class="hamburger" aria-hidden="true">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+
+                <ul class="primary-nav__list" id="primary-navigation" data-state="closed">
+                    <!-- <li class="primary-nav__item"><a href="/about-us.html">About Us</a></li> -->
+                    <li class="primary-nav__item"><a href="/services.html">Services</a></li>
+                    <li class="primary-nav__item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
         </div>
 
         <div class="slider">
@@ -47,7 +64,11 @@
                 <div class="hero-text">
                     <div class="title black-overlay">
                         <h1>Maintenance services in Perth and surrounding suburbs</h1>
-                        <p>For all your residential and commercial maintenance and carpentry needs - we do it all!</p>
+                        <!-- <p>For all your residential and commercial maintenance and carpentry needs - we do it all!</p> -->
+                        <p>At Maintenancextra, we understand the importance of regular maintenance to keep your property in
+                            optimal condition. Our team of skilled professionals are dedicated to providing comprehensive
+                            maintenance services to meet your needs. Whether you're a homeowner, business owner, or property
+                            manager, we've got you covered.</p>
                     </div>
                 </div>
                 <button class="prev-btn">&lt;</button>
@@ -64,7 +85,7 @@
         <div class="hero-banner-contact">
             <p>Contact us now</p>
             <button class="btn btn-primary quote-btn">Get a free quote</button>
-            <a href="tel:+61417793334" class="btn btn-secondary">call now</a>
+            <a href="tel:+61417793334" class="btn btn-secondary">Call us: 0417 793 334</a>
         </div>
 
     </header>
@@ -75,17 +96,23 @@
 
             <article>
                 <div class="container">
-                    <h2>Maintenance and repairs</h2>
+                    <h2>Maintenance and Caprentry Services</h2>
+                    <p>At Maintenancextra, we understand the importance of regular maintenance to keep your property in
+                        optimal condition. Our team of skilled professionals are dedicated to providing comprehensive
+                        maintenance services to meet your needs. Whether you're a homeowner, business owner, or property
+                        manager, we've got you covered. Here's a list of some of the maintenance services we offer:
+                    </p>
                     <ul>
-                        <li>Office/Shop fit-outs and de-fits</li>
-                        <li>Flatpack assemblies</li>
-                        <li>Flyscreen install and repair</li>
-                        <li>Hanging signs, pictures/artwork</li>
+                        <li>Maintenance and repairs</li>
+                        <li>Office/shop fit-outs and de-fits</li>
+                        <li>Flatpack/furniture assembly</li>
+                        <li>Hanging signs, pictures and artwork</li>
                         <li>Cupboards and shelving</li>
-                        <li>Doors and frames</li>
+                        <li>Doors, frames and locks</li>
+                        <li>Flyscreen install and repair</li>
                         <li>Skirting boards</li>
-                        <li>Decking</li>
                         <li>Flooring</li>
+                        <li>Decking</li>
                         <li>Verandas/pergolas</li>
                         <li>And much more... just ask us</li>
                     </ul>
@@ -153,8 +180,8 @@
                 <label for="message">Your Message</label>
                 <input type="text" id="message" name="message">
             </div>
-            <button id="quoteSubmit" type="submit">Request a Quote</button>
-            <button id="quoteClose">Cancel</button>
+            <button type="submit" id="quoteSubmit" class="btn btn-primary">Request a Quote</button>
+            <button id="quoteClose" class="btn btn-primary">Cancel</button>
         </form>
     </dialog>
 
