@@ -5,6 +5,12 @@
 
 .header-grid {
     display: grid;
+    margin-bottom: 0.675rem;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
 }
 
 .phone {
@@ -29,7 +35,7 @@
     .logo {
         grid-row: 1 / 3;
         align-self: center;
-    }
+    }   
 
     .phone {
         display: grid;
